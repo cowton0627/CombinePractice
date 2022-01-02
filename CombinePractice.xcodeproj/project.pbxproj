@@ -13,6 +13,13 @@
 		916BCB25277B0391003373B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916BCB23277B0391003373B9 /* Main.storyboard */; };
 		916BCB27277B0397003373B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916BCB26277B0397003373B9 /* Assets.xcassets */; };
 		916BCB2A277B0397003373B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916BCB28277B0397003373B9 /* LaunchScreen.storyboard */; };
+		916BCB32277B04B6003373B9 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCB31277B04B6003373B9 /* APICaller.swift */; };
+		916BCB34277B0EE5003373B9 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCB33277B0EE5003373B9 /* AlertService.swift */; };
+		916BCB36277B0F1A003373B9 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCB35277B0F1A003373B9 /* Animal.swift */; };
+		916BCB38277B0F48003373B9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCB37277B0F48003373B9 /* SecondViewController.swift */; };
+		916BCB3A277B13BA003373B9 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCB39277B13BA003373B9 /* NetworkingService.swift */; };
+		916BCB3C277B24B3003373B9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCB3B277B24B3003373B9 /* ThirdViewController.swift */; };
+		916BCB3F277B24DD003373B9 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 916BCB3E277B24DD003373B9 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		916BCB26277B0397003373B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		916BCB29277B0397003373B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916BCB2B277B0397003373B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916BCB31277B04B6003373B9 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		916BCB33277B0EE5003373B9 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		916BCB35277B0F1A003373B9 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		916BCB37277B0F48003373B9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		916BCB39277B13BA003373B9 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		916BCB3B277B24B3003373B9 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916BCB3F277B24DD003373B9 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +72,13 @@
 			children = (
 				916BCB1D277B0391003373B9 /* AppDelegate.swift */,
 				916BCB1F277B0391003373B9 /* SceneDelegate.swift */,
+				916BCB31277B04B6003373B9 /* APICaller.swift */,
 				916BCB21277B0391003373B9 /* ViewController.swift */,
+				916BCB3B277B24B3003373B9 /* ThirdViewController.swift */,
+				916BCB37277B0F48003373B9 /* SecondViewController.swift */,
+				916BCB39277B13BA003373B9 /* NetworkingService.swift */,
+				916BCB35277B0F1A003373B9 /* Animal.swift */,
+				916BCB33277B0EE5003373B9 /* AlertService.swift */,
 				916BCB23277B0391003373B9 /* Main.storyboard */,
 				916BCB26277B0397003373B9 /* Assets.xcassets */,
 				916BCB28277B0397003373B9 /* LaunchScreen.storyboard */,
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = CombinePractice;
+			packageProductDependencies = (
+				916BCB3E277B24DD003373B9 /* Algorithms */,
+			);
 			productName = CombinePractice;
 			productReference = 916BCB1A277B0391003373B9 /* CombinePractice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 916BCB11277B0391003373B9;
+			packageReferences = (
+				916BCB3D277B24DD003373B9 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 916BCB1B277B0391003373B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				916BCB22277B0391003373B9 /* ViewController.swift in Sources */,
+				916BCB3C277B24B3003373B9 /* ThirdViewController.swift in Sources */,
 				916BCB1E277B0391003373B9 /* AppDelegate.swift in Sources */,
 				916BCB20277B0391003373B9 /* SceneDelegate.swift in Sources */,
+				916BCB3A277B13BA003373B9 /* NetworkingService.swift in Sources */,
+				916BCB32277B04B6003373B9 /* APICaller.swift in Sources */,
+				916BCB38277B0F48003373B9 /* SecondViewController.swift in Sources */,
+				916BCB34277B0EE5003373B9 /* AlertService.swift in Sources */,
+				916BCB36277B0F1A003373B9 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		916BCB3D277B24DD003373B9 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		916BCB3E277B24DD003373B9 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916BCB3D277B24DD003373B9 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 916BCB12277B0391003373B9 /* Project object */;
 }
